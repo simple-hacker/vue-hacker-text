@@ -1,6 +1,6 @@
 # vue-hacker-text
 
-> Vue Single File Component to animate text in different decoding styles.
+Vue Single File Component to animate text in different decoding styles.
 
 ![example](https://raw.githubusercontent.com/simple-hacker/vue-hacker-text/master/images/examples.gif)
 
@@ -12,7 +12,20 @@ npm install --save vue-hacker-text
 
 # Basic Usage
 ```html
-<vue-hacker-text text="Hacker Text"/>
+<template> 
+    <vue-hacker-text text="Hacker Text"/>
+<template>
+
+<script>
+    import Vue from 'vue';
+    import VueHackerText from '@/vue-hacker-text.vue';
+
+    export default Vue.extend({
+        components: {
+            VueHackerText
+        },
+    });
+</script>
 ```
 
 where text is the string you wish to finish decoding to.
@@ -22,10 +35,10 @@ where text is the string you wish to finish decoding to.
 Prop | Type | Values | Default | Description
 ----- | ----- | ----- | ------ | -----
 text | `String` | - | - | Required
-mode | `String` | "`hacker`" / "`type`" / "`stars`" | "`hacker`" | Choose decoding style
-speed | `String` | "`slow`" / "`medium`" / "`fast`" | "`medium`" | The speed at which it a character changes. `slow = 50ms`, `medium = 25ms`, `fast = 5ms`
+mode | `String` | `hacker`, `type`, `stars` | `hacker` | Choose decoding style
+speed | `String` | `slow`, `medium`, `fast` | `medium` | The speed at which it a character changes. `slow = 50ms`, `medium = 25ms`, `fast = 5ms`
 probability | `Number` | `0.005 - 1.0` | `0.01` | The probability of selecting the correct character.
-typeCharacter | `String` | - | ` | ` | Flashing character used for Type decoder
+typeCharacter | `String` | - | `|` | Flashing character used for Type decoder
 
 
 Changing the probability can fine tune the speed of which the decoding finishes.  Selecting fast speed with a high probability will result in an extremely fast decode.  Selecting slow speed with a low probability will result in a very slow decode.
