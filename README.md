@@ -2,7 +2,7 @@
 
 > Vue Single File Component to animate text in different decoding styles.
 
-# Images
+![example](https://raw.githubusercontent.com/simple-hacker/vue-hacker-text/master/images/examples.gif)
 
 # Installation (NPM)
 
