@@ -71,7 +71,7 @@ export default {
         }
 
         // Emit decodingFinished for callback function
-        this.$emit('decodingFinished')
+        this.$emit('decodeFinish')
       }
     }
   },
@@ -148,7 +148,7 @@ export default {
   mounted() {
 
     // Enable before decoding function callback.
-    this.$emit('decodingStarted')
+    this.$emit('decodeStart')
 
     // Run decoder at speed interval
     this.decodeInterval = setInterval(() => {

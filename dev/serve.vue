@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <div class="cool-text">
-      <vue-hacker-text text="Hacker Text" mode="stars" speed="slow" :probability="0.005" @decodingStarted="start" @decodingFinished="finish"/>
+    <h1>Hacker</h1>
+    <div class="hacker-text">
+      <vue-hacker-text text="Hacker Text" speed="slow"/>
     </div>
-    <div class="cool-text">
-      <vue-hacker-text text="another one" speed="slow"/>
+    <h1>Stars</h1>
+    <div class="hacker-text">
+      <vue-hacker-text text="Hacker Text" mode="stars" speed="slow"/>
     </div>
-    <div class="cool-text">
-      <vue-hacker-text text="michael perks" mode="type" speed="fast"/>
+    <h1>Type</h1>
+    <div class="hacker-text">
+      <vue-hacker-text text="Hacker Text" mode="type" speed="slow"/>
     </div>
   </div>
 </template>
@@ -33,9 +36,25 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-  .cool-text {
-    font-weight: 700;
-    font-size: 3em;
-    text-transform: uppercase;
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  h1 {
+    color: #333333
+  }
+
+  .hacker-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #151515;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 </style>
