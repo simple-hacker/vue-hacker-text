@@ -1,7 +1,15 @@
 {
   "name": "vue-hacker-text",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue Single File Component to animate text in different decoding styles.",
+  "author": {
+    "name": "Michael Perks",
+    "email": "michael.perks@live.co.uk",
+    "url": "https://simplehacker.co.uk/"
+  },
+  "keywords": ["decode", "hacker", "decoding", "vue"],
+  "homepage": "https://github.com/simple-hacker/vue-hacker-text#README",
+  "bugs": "https://github.com/simple-hacker/vue-hacker-text/issues",
   "main": "dist/vue-hacker-text.ssr.js",
   "browser": "dist/vue-hacker-text.esm.js",
   "module": "dist/vue-hacker-text.esm.js",
