@@ -18,7 +18,7 @@ npm install --save vue-hacker-text
 
 <script>
     import Vue from 'vue';
-    import VueHackerText from '@/vue-hacker-text.vue';
+    import VueHackerText from 'vue-hacker-text';
 
     export default Vue.extend({
         components: {
@@ -36,7 +36,7 @@ Prop | Type | Values | Default | Description
 ----- | ----- | ----- | ------ | -----
 text | `String` | - | - | Required
 mode | `String` | `hacker`, `type`, `stars` | `hacker` | Choose decoding style
-speed | `String` | `slow`, `medium`, `fast` | `medium` | The speed at which it a character changes. `slow = 50ms`, `medium = 25ms`, `fast = 5ms`
+speed | `String` | `slow`, `medium`, `fast` | `medium` | The speed at which a character changes. `slow = 50ms`, `medium = 25ms`, `fast = 5ms`
 probability | `Number` | `0.005 - 1.0` | `0.01` | The probability of selecting the correct character.
 typeCharacter | `String` | - | `|` | Flashing character used for Type decoder
 
