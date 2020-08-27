@@ -38,7 +38,7 @@ text | `String` | - | - | Required
 mode | `String` | `hacker`, `type`, `stars` | `hacker` | Choose decoding style
 speed | `String` | `slow`, `medium`, `fast` | `medium` | The speed at which a character changes. `slow = 50ms`, `medium = 25ms`, `fast = 5ms`
 probability | `Number` | `0.005 - 1.0` | `0.01` | The probability of selecting the correct character.
-typeCharacter | `String` | - | `|` | Flashing character used for Type decoder
+typeCharacter | `String` | - | `\|` | Flashing character used for Type decoder
 
 
 Changing the probability can fine tune the speed of which the decoding finishes.  Selecting fast speed with a high probability will result in an extremely fast decode.  Selecting slow speed with a low probability will result in a very slow decode.
@@ -50,7 +50,7 @@ The character set used for decoding is 95 characters.  So selecting a probabilit
 Event | Description
 ----- | ---------
 `@decodeStart` | Event emitted before decoding starts
-`@decodeFinish` | Event emitted once completion of decoding
+`@decodeFinish` | Event emitted once decoding has completed
 
 
 # Examples
